@@ -49,7 +49,33 @@ CREATE TABLE transactions (
     sale_date DATE,
     amount DECIMAL(10, 2)
 );
+Sample Data
 
+Customers
+
+(1, 'Yabesi', 'Musanze')
+
+(2, 'Niyonkuru', 'Rubavu')
+
+(3, 'Nyirimpeta', 'Gasabo')
+
+Products
+
+(1, 'Beans', 'Legumes')
+
+(2, 'Oranges', 'Fruits')
+
+(3, 'Carrots', 'Vegetables')
+
+(4, 'Coffee', 'Cash Crops')
+
+Transactions
+
+(1, 1, 1, '2025-01-03', 12000)
+
+(2, 3, 4, '2025-04-13', 12400)
+
+(3, 5, 7, '2025-05-09', 17800)
 
 
 
