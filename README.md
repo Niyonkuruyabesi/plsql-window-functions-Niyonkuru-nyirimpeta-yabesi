@@ -200,4 +200,31 @@ ORDER BY sale_date;
 ```
 ![My Project Screenshot](/screenshots/max1.png)
 
+3. Navigation Functions
+   
+```sql
+--lag(),
+SELECT transaction_id,
+       sale_date,
+       amount,
+       LAG(amount) OVER (ORDER BY sale_date) AS prev_amount
+FROM transactions
+ORDER BY sale_date;
+-- The above query retrieves the previous amount for each transaction ordered by the sale date. The LAG() function is used as a window function to access the amount from the previous row in the ordered set, allowing for comparison between the current and previous transaction amounts.
+```
+![My Project Screenshot](/screenshots/lag.png)
+
+```sql
+--lead(),
+SELECT transaction_id,
+       sale_date,
+       amount,
+       LEAD(amount) OVER (ORDER BY sale_date) AS next_amount
+FROM transactions
+ORDER BY sale_date;
+-- The above query retrieves the next amount for each transaction ordered by the sale date. The LEAD() function is used as a window function to access the amount from the next row in the ordered set, allowing for comparison between the current and next transaction amounts.
+```
+![My Project Screenshot](/screenshots/lead.png)
+
+
 
