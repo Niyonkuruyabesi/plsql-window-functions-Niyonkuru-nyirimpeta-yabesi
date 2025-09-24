@@ -275,3 +275,19 @@ Increase stock of top-selling products.
 Launch promotions for low-spending customers.
 
 Plan seasonal campaigns based on product demand cycles.
+
+
+
+ REFERENCES
+
+Oracle Database Documentation – Window Functions
+
+W3Schools SQL OVER Clause
+
+GeeksforGeeks – SQL Window Functions Tutorial
+
+TutorialsPoint – PL/SQL Guide
+
+Mode Analytics SQL Guide
+
+Course Textbook
