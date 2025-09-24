@@ -49,12 +49,12 @@ CREATE TABLE transactions (
     sale_date DATE,
     amount DECIMAL(10,2)
 );
-
+```
 
 DATA INSERTION
 
 1. CUSTOMERS TABLE
-
+```SQL
 INSERT INTO customers VALUES (1, 'Yabesi', 'Musanze');
 INSERT INTO customers VALUES (2, 'Niyonkuru', 'Rubavu');
 INSERT INTO customers VALUES (3, 'Nyirimpeta', 'Gasabo');
@@ -65,4 +65,32 @@ INSERT INTO customers VALUES (7, 'Iduhorahafi', 'Remera');
 INSERT INTO customers VALUES (8, 'Niyomugaba', 'Kimironko');
 INSERT INTO customers VALUES (9, 'Uwase', 'Rubavu');
 INSERT INTO customers VALUES (10, 'Uwera', 'Gakenke');
+```
+2. PRODUCTS TABLE
+```sql
+INSERT INTO products VALUES (1, 'Beans', 'Legumes');
+INSERT INTO products VALUES (2, 'Oranges', 'Fruits');
+INSERT INTO products VALUES (3, 'Carrots', 'Vegetables');
+INSERT INTO products VALUES (4, 'Coffee', 'Cash Crops');
+INSERT INTO products VALUES (5, 'Milk', 'Livestock');
+INSERT INTO products VALUES (6, 'Flowers', 'Horticulture');
+INSERT INTO products VALUES (7, 'Tea', 'Cash Crops');
+INSERT INTO products VALUES (8, 'Onions', 'Vegetables');
+INSERT INTO products VALUES (9, 'Bananas', 'Fruits');
+INSERT INTO products VALUES (10, 'Rice', 'Cereals');
+```
+3.TRANSACTIONS TABLE
+```SQL
+INSERT INTO transactions VALUES (1, 1, 1, '2025-01-03', 12000);
+INSERT INTO transactions VALUES (2, 3, 4, '2025-04-13', 12400);
+INSERT INTO transactions VALUES (3, 5, 7, '2025-05-09', 17800);
+INSERT INTO transactions VALUES (4, 8, 2, '2025-09-09', 20000);
+INSERT INTO transactions VALUES (5, 9, 8, '2025-07-03', 25000);
+INSERT INTO transactions VALUES (6, 5, 4, '2025-02-20', 27000);
+INSERT INTO transactions VALUES (7, 1, 9, '2025-03-15', 10000);
+INSERT INTO transactions VALUES (8, 4, 8, '2025-01-10', 8000);
+INSERT INTO transactions VALUES (9, 10, 1, '2025-01-10', 8000);
+INSERT INTO transactions VALUES (10, 10, 10, '2025-10-10', 100000);
+
+
 
