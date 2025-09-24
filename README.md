@@ -66,6 +66,8 @@ INSERT INTO customers VALUES (8, 'Niyomugaba', 'Kimironko');
 INSERT INTO customers VALUES (9, 'Uwase', 'Rubavu');
 INSERT INTO customers VALUES (10, 'Uwera', 'Gakenke');
 ```
+![My Project Screenshot](/screenshots/customers.png)
+
 2. PRODUCTS TABLE
 ```sql
 INSERT INTO products VALUES (1, 'Beans', 'Legumes');
@@ -79,6 +81,8 @@ INSERT INTO products VALUES (8, 'Onions', 'Vegetables');
 INSERT INTO products VALUES (9, 'Bananas', 'Fruits');
 INSERT INTO products VALUES (10, 'Rice', 'Cereals');
 ```
+![My Project Screenshot](/screenshots/products.png)
+
 3.TRANSACTIONS TABLE
 ```SQL
 INSERT INTO transactions VALUES (1, 1, 1, '2025-01-03', 12000);
@@ -92,7 +96,7 @@ INSERT INTO transactions VALUES (8, 4, 8, '2025-01-10', 8000);
 INSERT INTO transactions VALUES (9, 10, 1, '2025-01-10', 8000);
 INSERT INTO transactions VALUES (10, 10, 10, '2025-10-10', 100000);
 ```
-
+![My Project Screenshot](/screenshots/transactions1.png)
 
 
 
