@@ -150,5 +150,54 @@ ORDER BY total_revenue DESC;
 ```
 ![My Project Screenshot](/screenshots/percent_rank.png)
 
+2. Aggregate Functions
+```sql
+--sum(), 
+SELECT transaction_id,
+       sale_date,
+       amount,
+       SUM(amount) OVER (ORDER BY sale_date) AS running_total
+FROM transactions
+ORDER BY sale_date;
+-- The above query calculates a running total of the amount for each transaction ordered by the sale date. The SUM() function is used as a window function to compute the cumulative sum of the amount column up to the current row, providing a running total that updates with each transaction in chronological order.
+```
+![My Project Screenshot](/screenshots/sum1.png)
+
+```sql
+--average(),
+
+SELECT transaction_id,
+       sale_date,
+       amount,
+       AVG(amount) OVER (ORDER BY sale_date) AS running_avg
+FROM transactions
+ORDER BY sale_date;
+-- The above query calculates a running average of the amount for each transaction ordered by the sale date. The AVG() function is used as a window function to compute the cumulative average of the amount column up to the current row, providing a running average that updates with each transaction in chronological order.
+```
+![My Project Screenshot](/screenshots/average1.png)
+
+```sql
+--minimum(),
+SELECT transaction_id,
+       sale_date,
+       amount,
+       MIN(amount) OVER (ORDER BY sale_date) AS min_so_far
+FROM transactions
+ORDER BY sale_date;
+-- The above query calculates the minimum amount encountered so far for each transaction ordered by the sale date. The MIN() function is used as a window function to compute the cumulative minimum of the amount column up to the current row, providing a running minimum that updates with each transaction in chronological order.
+```
+![My Project Screenshot](/screenshots/min1.png)
+
+```sql
+--maximum(),
+SELECT transaction_id,
+       sale_date,
+       amount,
+       MAX(amount) OVER (ORDER BY sale_date) AS max_so_far
+FROM transactions
+ORDER BY sale_date;
+-- The above query calculates the maximum amount encountered so far for each transaction ordered by the sale date. The MAX() function is used as a window function to compute the cumulative maximum of the amount column up to the current row, providing a running maximum that updates with each transaction in chronological order.
+```
+![My Project Screenshot](/screenshots/max1.png)
 
 
