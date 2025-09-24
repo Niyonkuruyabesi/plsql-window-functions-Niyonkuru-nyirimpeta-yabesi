@@ -2,20 +2,20 @@
 
 # PL/SQL Window Functions – Agribusiness Project
 
-## 📌 Project Overview
+##  Project Overview
 This project demonstrates the use of **PL/SQL window functions** to analyze sales data in an **agriculture/agribusiness company**.  
 The objective is to apply **ranking, aggregation, navigation, and distribution functions** to discover top customers, sales trends, and customer segmentation insights.  
 
 ---
 
-## 🏢 Business Problem
+##  Business Problem
 **Context**: Agribusiness operating across regions in Rwanda.  
 **Challenge**: The company does not know the **top-selling agricultural products** in each region.  
 **Expected Outcome**: By applying SQL window functions, the company can identify top products, track monthly revenue growth, and segment customers for marketing strategies.  
 
 ---
 
-## 🎯 Success Criteria
+##  Success Criteria
 1. Identify **Top customers by revenue** → `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`, `PERCENT_RANK()`.  
 2. Compute **running totals and averages** → `SUM()`, `AVG()`.  
 3. Track **minimum and maximum sales trends** → `MIN()`, `MAX()`.  
@@ -24,7 +24,7 @@ The objective is to apply **ranking, aggregation, navigation, and distribution f
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 ```sql
 CREATE DATABASE agriculture;
 
@@ -91,6 +91,10 @@ INSERT INTO transactions VALUES (7, 1, 9, '2025-03-15', 10000);
 INSERT INTO transactions VALUES (8, 4, 8, '2025-01-10', 8000);
 INSERT INTO transactions VALUES (9, 10, 1, '2025-01-10', 8000);
 INSERT INTO transactions VALUES (10, 10, 10, '2025-10-10', 100000);
+```
+
+
+
 
 
 
