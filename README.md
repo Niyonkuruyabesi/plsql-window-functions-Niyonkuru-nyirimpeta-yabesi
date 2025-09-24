@@ -23,3 +23,46 @@ The objective is to apply **ranking, aggregation, navigation, and distribution f
 5. Segment customers into **quartiles and distributions** → `NTILE(4)`, `CUME_DIST()`.  
 
 ---
+
+## 🗄️ Database Schema
+```sql
+CREATE DATABASE agriculture;
+
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    cust_name VARCHAR(50),
+    region VARCHAR(30)
+);
+
+CREATE TABLE products (
+    product_id INT PRIMARY KEY,
+    prod_name VARCHAR(50),
+    category VARCHAR(40)
+);
+
+CREATE TABLE transactions (
+    transaction_id INT PRIMARY KEY,
+    customer_id INT,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
+    product_id INT,
+    FOREIGN KEY (product_id) REFERENCES products(product_id),
+    sale_date DATE,
+    amount DECIMAL(10,2)
+);
+
+
+DATA INSERTION
+
+1. CUSTOMERS TABLE
+
+INSERT INTO customers VALUES (1, 'Yabesi', 'Musanze');
+INSERT INTO customers VALUES (2, 'Niyonkuru', 'Rubavu');
+INSERT INTO customers VALUES (3, 'Nyirimpeta', 'Gasabo');
+INSERT INTO customers VALUES (4, 'Rukundo', 'Kicukiro');
+INSERT INTO customers VALUES (5, 'Shema', 'Nyabihu');
+INSERT INTO customers VALUES (6, 'Ruterana', 'Nyabihu');
+INSERT INTO customers VALUES (7, 'Iduhorahafi', 'Remera');
+INSERT INTO customers VALUES (8, 'Niyomugaba', 'Kimironko');
+INSERT INTO customers VALUES (9, 'Uwase', 'Rubavu');
+INSERT INTO customers VALUES (10, 'Uwera', 'Gakenke');
+
