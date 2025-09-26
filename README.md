@@ -251,6 +251,9 @@ ORDER BY total_revenue DESC;
 ```
 ![My Project Screenshot](/screenshots/cume_dist.png)
 
+##  ERD (Entity Relationship Diagram)
+
+![ERD](./screenshots/erd.png)
 
 RESULTS ANALYSIS
  
